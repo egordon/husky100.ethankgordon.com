@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ethan K. Gordon | Husky100 Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Husky icon created by AomAm - Flaticon -->
+		<link rel="icon" 
+	          type="image/png" 
+	          href="images/husky_icon.png">
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Who am I?</a></li>
+							<li><a href="#discovery">Discovery</a></li>
+							<li><a href="#community">Community</a></li>
+							<li><a href="#leadership">Leadership</a></li>
+							<li><a href="#next">Next Steps</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Hi! I'm Ethan!</h1>
+
+							<p><span class="image left"><img src="images/ada_pics_1.jpg" alt="Ethan Eating" /></span> I have spent the last 5.5 years at UW as a CSE PhD Student studying <a href="https://robotfeeding.io"><span class="icon solid fa-link"></span> Robot-Assisted Feeding</a> for those with Mobility Impairments. Both on and off campus, UW has been a catalyst for my intellectual and social growth. I am grateful for the opportunities I've had in Seattle, and I am excited for the opportunities my PhD has opened up going forward.<br /><br /><img src="images/uw_logo.png" alt="UW CSE Logo" width="30%" /></p>
+							<t>Note: links with <span class="icon solid fa-link"></span> lead to additional information external to the portfolio.<br /> <a href="https://ethankgordon.com"><span class="icon solid fa-link"></span> Full Personal Website</a></t>
+						</div>
+					</section>
+
+				<!-- Discovery -->
+					<section id="discovery" class="wrapper style2 spotlights">
+						<div class="inner">
+							<h2>A Discovery Mindset: Building Complexity</h2>
+							<p>In CSE 573 (Artificial Intelligence), the final project was to build a bot to play Tetris. Instead of jumping right into Reinforcement Learning (RL), it was more fruitful to first develop a good heuristic (clear lines and don't get too high) and build up to RL from there. I took this lesson into my research: <b>It is useful to start with the <i>simplest</i> solution to a problem and add complexity to fill in the gaps.</b></p>
+						</div>
+						<section>
+							<div class="row gtr-uniform">
+								<div class="col-4"><span class="image fit"><video src="images/rrc_video_trim.mp4" width="100%" alt="Trifinger Robot Moving a Cube" data-position="center center" autoplay="true" loop="true" muted="true" /></span></div>
+								<div class="col-7"><h2>Experience: Real Robot Challenge 2020-2021</h2>
+									<p>One example of this principle in action was my submission to the Max Planck Institute's Real Robot Challenge in collaboration with Rishabh Madan at Cornell University and later Harshit Sikchi at UT-Austin. The goal was to get a trifinger arm to move a cube to a desired location. Against a slew of competitors using various learning and policy gradient methods, we saw success with just a series of ``motion primitives,'' hand-tuned control strategies that we strung together into a sequence. Our approach was the runner-up.</p>
+									<img width="100%" src="images/rrc_system.png" alt="Motion Primitive state machine approach to cube manipulation." />
+									<ul class="actions">
+										<li><a href="https://ethankgordon.com/pubs/2022_01_ral.html" class="button icon solid fa-link">Read the Paper</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<hr />
+						<section><div class="row gtr-uniform">
+							<div class="col-4"><span class="image fit"><video src="images/food_trim_mute.mp4" width="100%" alt="Contextual Bandit for Food Manipulation" data-position="center center" autoplay="true" loop="true" muted="true" /></span></div>
+							<div class="col-7">
+								<h2>Experience: Online Learning for Food Acquisition</h2>
+								<p>The exact same principle applied to my research on food manipulation. The goal was to get a robot arm to pick up different types of food. Since it is hard to collect data quickly with food in both the real world and simulation, a full end-to-end learning system would have been tricky to implement. Instead, we asked humans, universal experts at eating, for help. By looking at how humans eat, we created a discrete set of food manipulation strategies. Then, we could just learn which of those strategies would work the best for each food type. For the simple example in the video, the robot learns over time that coming in at an angle works better than straight up-and-down skewering for slippery banana slices. When this solution wasn't enough, we added complexity in the form of haptic information on top of the food images we were using previously.</p>
+								<img width="100%" src="images/posthoc_system.png" alt="Contextual bandit framework for food manipulation" />
+								<ul class="actions fit small">
+									<li><a href="https://ethankgordon.com/pubs/2023_11_corl.html" class="button icon solid fit small fa-link">Human-Informed Actions</a></li>
+									<li><a href="https://ethankgordon.com/pubs/2020_10_iros.html" class="button icon solid fit small fa-link">Contextual Bandits</a></li>
+									<li><a href="https://ethankgordon.com/pubs/2021_06_icra.html" class="button icon solid fit small fa-link">Haptic Context</a></li>
+								</ul>
+							</div>
+						</div></section>
+						<div class="inner">
+							<h3><i>Connecting the Dots</i></h3>
+							<p>My Food Manipulation research project is intimately tied with with the user studies I helped conduct in Robot-Assisted Feeding for those with mobility impairments, presented in my <a href="#community">Commitment to an Inclusive Community.</a> Food used for this study were based on those preferred by Tyler, one of our community researchers with a mobility impairment.</p>
+						</div>
+					</section>
+
+				<!-- Community -->
+					<section id="community" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Commitment to an Inclusive Community</h2>
+							<p>I have been honored to be able to dedicate my work at UW and in Seattle in general to underserved and underrepresented communites, namely, those with mobility impairments and those without secure access to food. The latter has been through my experience doing Food Rescue with the <a href="https://familyworksseattle.org/"><span class="icon solid fa-link"></span>FamilyWorks Seattle Food Bank</a>. The former is presented here:</p>
+						</div>
+						<hr />
+						<section><div class="row gtr-uniform">
+							<div class="col-4"><span class="image fit"><img src="https://ethankgordon.com/images/2020_03_hri.png" width="100%" alt="Feeding Study 2020" data-position="center center"/></span></div>
+							<div class="col-7">
+								<h2>Experience: Robot-Assisted Feeding</h2>
+								<p>This project has been the primary driver of my PhD. It has spawned may demonstrations and outreach opportunities at conferences and K-12 schools alike. But most importantly, this project has been for those people with mobility impairments: to engender the feeling of independence that comes with being able to feed oneself. This work was driven by two user studies: one in 2020 focused on understand what elements of the system people wanted to be autonomous, and another under double-blind review right now to demonstrate full-meal feeding and understand what work there still is to do to enable a long-term, in-home deployment.</p>
+								<img width="100%" src="images/feeding_system.png" alt="Robot-Assisted Feeding System Diagram" />
+								<ul class="actions">
+									<li><a href="https://ethankgordon.com/pubs/2020_03_hri.html" class="button icon solid fa-link">2020 User Study</a></li>
+								</ul>
+							</div>
+						</div></section>
+						<div class="inner">
+							<h3><i>Connecting the Dots</i></h3>
+							<p>Over the past 5 years on the feeding project, I have moved into a <a href="#leadership">Leadership Role</a>, learning much about project and team management. Additionally, the findings from these user studies act as the North Star for my food manipulation research. My goal was to <a href="#discover">discover</a> the simplest solution that would actually work in people's homes.</p>
+						</div>
+					</section>
+
+				<!-- Leadership -->
+					<section id="leadership" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Capacity for Leadership</h2>
+							<p>At UW, I have had the privilege of working with extremely talented undergraduate, graduate, and even high school students as mentees. They have been an integral part of building the robot-assisted feeding system described in the next section. I have applied the lessons from those relationships to more general leadership activities in the human-robot-interaction (HRI) community.</p>
+						</div>
+						<img width="100%" src="images/pioneers2024-wide.png" alt="HRI Pioneers 2024 Logo" />
+						<div class="inner">
+							<h2>Experience: HRI Pioneers</h2>
+							<p>In 2023, I was part of the HRI Pioneers 2023 cohort, which brings together HRI PhD students to foster creativity and collaboration surrounding key challenges in HRI. I enjoyed the experience so much that I signed up to be the General Chair of the 2024 Workshop. I have learned so much about managing an organizing committee, all while meeting some of the most interesting rising stars in HRI.</p>
+							
+							<ul class="actions fit">
+								<li><a href="https://drive.google.com/file/d/1E0_zryz43jspHL7Fv8yYSsbUiRiN4Vfi/view?usp=drive_link" class="button icon solid fit fa-link"> My 2023 Poster</a></li>
+								<li><a href="https://hripioneers.org" class="button icon solid fit fa-link">Pioneers 2024</a></li>
+							</ul>
+						</div>
+						<div class="inner">
+							<h3><i>Connecting the Dots</i></h3>
+							<p>I have been able to leverage my experience both in and running HRI Pioneers to connect with the broader HRI Community, which has helped prepare me for my <a href="#next">Next Steps in Academia</a>.</p>
+						</div>
+					</section>
+
+				<!-- Next Steps -->
+					<section id="next" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Ready for What is Next</h2>
+							<p>My advisors at UW have successfully encouraged me to network with those in my field around the world, and I have been able to parlay that support into a Postdoctoral Research postiion at the University of Pennsylvania, which I will start this Spring. </p>
+							<p><span class="image left"><img src="images/rpl_kth.png" alt="KTH RPL Summer School" /></span>A key theme of this support and networking has been to build my intellectual flexibility. At the <a href="https://summer-school.rpl.eecs.kth.se/past-schools-2022/"><span class="icon solid fa-link"></span>KTH RPL Summer School</a>, I got the chance to meet students from all different backgrounds: HRI, Motion Planning, Task Planning, Robot Learning, Perception, and even Brain-Computer Interfaces to name a few. The goal of that week-long retreat was to collaborate with students from these different fields and propose a research project. It was a challenge to go beyond my HRI comfort zone, and the proposal I submitted with two other students that week went nowhere.</p>
+							<p><span class="image right"><img src="https://ethankgordon.com/images/2023_06_icra.png" alt="Honda Research Institute In-Hand Manipulation Research" /></span> However, noticing my deficiency in this type of cross-field collaboration, I decided to take an internship at the Honda Research Institute in San Jose, CA. Here, I jumped into a completely new field: In-Hand Robot Tool Manipulation. Over those three months, I was able to formulate a research problem (in this case: Grasp Sequence Planning) and propose and implement a solution. It was a great experience that ended up being the catalyst for the postdoc position I will be starting in April.</p>
+							<ul class="actions">
+								<li><a href="https://ethankgordon.com/pubs/2023_06_icra.html" class="button icon solid fit fa-link">Honda RI Paper</a></li>
+							</ul>
+
+						</div>
+						<div class="inner">
+							<h3><i>Connecting the Dots</i></h3>
+							<p>Every aspect of my UW story has helped me get to where I am today. Through the Robot-Assisted Feeding Project, I have developed a greater appreciation for ethical research that includes community stakeholders, ensuring that we are actually solving a problem that improves peopls lives. I have honed in on a successful research ethos: start with the simplest solution and build complexity as the need arises. Through experiences both on and off campus I have developed the leadership skills necessary to mentor students in an academic lab as well as the communication skills and intellectual flexibility to work with colleagues around the world. Because of all these experiences, I feel ready to take the next step on my academic journey.
+							</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Ethan K. Gordon. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li><a href="https://www.flaticon.com/free-icons/siberian-husky" title="siberian husky icons">Siberian husky icons created by AomAm - Flaticon</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
